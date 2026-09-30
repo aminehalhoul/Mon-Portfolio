@@ -1,0 +1,97 @@
+﻿=== PAGE 1 ===
+HALHOUL
+MED AMINE
+CONTACT
+PROFIL
+├ëtudiant en 5 ßÁë  ann├®e du cycle ing├®nieur en Intelligence Artificielle et Data
+Science ├á lÔÇÖEMSI, passionn├® par le machine learning, le deep learning, la
+computer vision et lÔÇÖanalyse de donn├®es. Exp├®riment├® en d├®veloppement Web
+ainsi quÔÇÖen conception de solutions IA, je mÔÇÖint├®resse particuli├¿rement aux projets
+combinant intelligence artificielle et d├®veloppement logiciel.
++212 701724831
+halhoulamine38@gmail.com
+Rabat,Morocco
+linkedin.com/in/mohamed-amine-halhoul-
+299261297
+FORMATION
+EXP├ëRIENCES PROFESSIONNELLES
+STAGE PFA ÔÇô FONDATION MOHAMMED VI RABAT (FM6)
+juillet 2025 (1 mois)
+D├®veloppement dÔÇÖune plateforme collaborative de r├®seau destin├®e ├á
+am├®liorer la communication et la gestion des t├óches internes.
+Le projet permet la centralisation des demandes administratives, le
+partage dÔÇÖinformations, lÔÇÖorganisation des activit├®s et la collaboration
+entre les utilisateurs au sein de la plateforme.
+HACKATHON ÔÇö D├ëVELOPPEMENT D'APPLICATION IA (FIKRATECH) 
+2026
+Plateforme RAG permettant aux ├®tudiants et professeurs d'interroger
+les documents officiels de l'EMSI via un chatbot s├®curis├®. Stack :
+FastAPI, React.js, MongoDB, ChromaDB, LangChain (Llama 3),
+JWT/RBAC.
+D├ëTECTION DE DEEPFAKES PAR DEEP LEARNING
+2026
+Application desktop de gestion des livres, utilisateurs et op├®rations
+d'emprunt/retour avec interface graphique. Stack : Java Swing,
+MySQL..
+CYCLE ING├ëNIEUR ÔÇô G├ëNIE INFORMATIQUE ET R├ëSEAUX
+2024 ÔÇô Pr├®sent
+EMSI ÔÇô ├ëcole Marocaine des Sciences
+de lÔÇÖIng├®nieur
+BACCALAUR├ëAT SCIENCES PHYSIQUES
+2022
+lycee Lissan Edin Ibn Khatib
+COMP├ëTENCES
+Langages : Python, Java, C++, C, PHP
+IA & Data Science : Machine Learning, Deep Learning, Computer
+Vision, OCR, TensorFlow/Keras, OpenCV, Tesseract
+D├®veloppement : Django, HTML/CSS/Js, FastAPI, React, React
+Native
+Bases de donn├®es : MySQL, MongoDB, SQL SERVER, PostgreSQL
+Outils & environnements : Github, Linux (Unix), UML
+Travail en ├®quipe
+LANGUES
+Fran├ºais : interm├®diaire avanc├® (B2)
+Anglais : Niveau Interm├®diaire
+Arabe : Langue maternelle
+PROJETS ACAD├ëMIQUES
+CERTIFICATIONS
+D├ëVELOPPEMENT & PROGRAMMATION
+React Native ÔÇö Meta ÔÇö Novembre 2025
+Interactivity with JavaScript ÔÇö University of Michigan ÔÇö Novembre
+2024
+Introduction ├á la programmation orient├®e objet (C++) ÔÇö EPFL ÔÇö
+Novembre 2024
+The Unix Workbench ÔÇö Johns Hopkins University ÔÇö Novembre 2024
+DATA & INTELLIGENCE ARTIFICIELLE
+Python for Data Science, AI & Development ÔÇö IBM ÔÇö Mars 2025
+Introduction to Big Data ÔÇö San Diego Supercomputer Center ÔÇö Mai 2026
+GESTION DE PROJET & ING├ëNIERIE LOGICIELLE
+Gestion de projet Agile ÔÇö Google ÔÇö Mars 2026
+Software Engineering: Software Design and Project Management ÔÇö
+The Hong Kong University of Science and Technology ÔÇö Mars 2025
+M├ëTHODOLOGIE & RECHERCHE
+La recherche documentaire ÔÇö ├ëcole Polytechnique ÔÇö Mars 2025
+ACTIVIT├ëS & PARTICIPATIONS
+Participant ÔÇö Ramadan AI Competition ÔÇö EMSI ÔÇö Avril 2026
+SYST├êME DE RECOMMANDATION INTELLIGENT POUR E-COMMERCE
+2026
+Conception et d├®veloppement d'un moteur de recommandation
+personnalis├® bas├® sur le filtrage collaboratif et le machine learning,
+analysant le comportement et l'historique des utilisateurs pour
+g├®n├®rer des suggestions produits en temps r├®el. Stack : Python,
+Scikit-learn, Pandas.
+SYST├êME DE GESTION DE BIBLIOTH├êQUE
+2026
+D├®veloppement d'un mod├¿le de classification de contenus visuels
+manipul├®s reposant sur des architectures CNN et des techniques de
+transfer learning, capable de distinguer les m├®dias authentiques des
+deepfakes avec un haut niveau de pr├®cision. Stack : Python,
+TensorFlow/PyTorch, OpenCV.
+STAGE PFA ÔÇô MAMDA-MCMA RABAT
+Juillet ÔÇô Ao├╗t 2026 (2 mois)
+Conception et d├®veloppement dÔÇÖun syst├¿me intelligent dÔÇÖextraction
+automatique des informations des CNIE marocaines (anciens et
+nouveaux formats). Pipeline Computer Vision + OCR, API FastAPI,
+PostgreSQL, interface Web React et application Mobile React
+Native/Expo.
+

@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Amine Halhoul | AI & Data Science Engineer</title>
+  <meta name="description"
+    content="Portfolio de Mohamed Amine Halhoul, Étudiant Ingénieur en Intelligence Artificielle & Data Science." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- Background Glows -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#home" class="logo">
+      <img src="photoamine.jpg" alt="Amine Halhoul" class="nav-profile-pic" />
+    </a>
+    <button class="menu-btn-anish" id="menuBtn">
+      MENU
+    </button>
+  </nav>
+
+  <!-- Floating Nav Panel -->
+  <div class="nav-panel" id="navPanel" role="dialog" aria-modal="true" aria-label="Navigation">
+    <nav class="nav-panel-links">
+      <a href="#about" class="nav-panel-link" tabindex="-1">ABOUT</a>
+      <a href="#parcours" class="nav-panel-link" tabindex="-1">MON PARCOURS</a>
+      <a href="#experience" class="nav-panel-link" tabindex="-1">EXPERIENCE</a>
+      <a href="#projects" class="nav-panel-link" tabindex="-1">PROJECTS</a>
+      <a href="#certifications" class="nav-panel-link" tabindex="-1">CERTIFICATIONS</a>
+      <a href="#competences" class="nav-panel-link" tabindex="-1">SKILLS</a>
+      <a href="#contact" class="nav-panel-link" tabindex="-1">CONTACT</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ─── HERO SECTION ─── -->
+    <section class="hero-anish" id="home">
+      <!-- Polygon Photo (Left) -->
+      <div class="hero-polygon-wrapper blur-reveal">
+        <div class="hero-polygon">
+          <img src="photoamine.jpg" alt="Mohamed Amine Halhoul" class="hero-photo-bw" />
+        </div>
+      </div>
+
+      <!-- Content (Right) -->
+      <div class="hero-content-anish">
+        <h1 class="hero-title-anish blur-reveal" style="animation-delay: 0.1s;">
+          Bonjour le Monde !<br />
+          Je suis <span class="accent-italic">Amine</span>
+        </h1>
+        <p class="hero-desc-anish blur-reveal" style="animation-delay: 0.2s;">
+          Étudiant en 5ᵉ année du cycle ingénieur à l’EMSI Rabat, spécialisé en Intelligence Artificielle & Data
+          Science, je suis passionné par le Machine Learning, le Deep Learning et la Computer Vision. Je transforme les
+          données et l’IA en solutions intelligentes et concrètes.
+        </p>
+
+        <div class="hero-actions-anish blur-reveal" style="animation-delay: 0.3s;">
+          <a href="#projects" class="btn btn-lime">Mes Projets</a>
+          <a href="MOHAMED AMINE HALHOUL CV.pdf" class="btn btn-outline-lime">Mon CV</a>
+        </div>
+
+        <div class="hero-socials-anish blur-reveal" style="animation-delay: 0.4s;">
+          <a href="https://github.com/aminehalhoul" target="_blank" class="social-box">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/mohamed-amine-halhoul-299261297" target="_blank" class="social-box">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="mailto:halhoulamine38@gmail.com" class="social-box">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── LOGOS MARQUEE SECTION ─── -->
+    <section class="logos-marquee">
+      <div class="logos-track">
+        <!-- Group 1 -->
+        <div class="logos-group">
+          <img src="image/mcma.jpg" alt="MAMDA-MCMA" class="client-logo" />
+          <img src="image/fm6.png" alt="Fondation Mohammed VI" class="client-logo logo-bg-white" />
+          <img src="image/emsi.png" alt="EMSI" class="client-logo" />
+          <img src="image/honoris.jpg" alt="HONORIS" class="client-logo" />
+          <img src="image/Coursera.png" alt="COURSERA" class="client-logo" />
+
+
+        </div>
+        <!-- Group 2 (Clone for infinite loop) -->
+        <div class="logos-group" aria-hidden="true">
+          <img src="image/mcma.jpg" alt="MAMDA-MCMA" class="client-logo" />
+          <img src="image/fm6.png" alt="Fondation Mohammed VI" class="client-logo logo-bg-white" />
+          <img src="image/emsi.png" alt="EMSI" class="client-logo" />
+          <img src="image/honoris.jpg" alt="HONORIS" class="client-logo" />
+          <img src="image/Coursera.png" alt="COURSERA" class="client-logo" />
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TIMELINE SECTION (Mon Parcours) ─── -->
+    <section class="timeline-section has-glow" id="parcours">
+      <div class="container">
+        <h3 class="section-title reveal text-center">Mon <span class="accent-italic">Parcours</span></h3>
+
+        <div class="timeline">
+          <!-- Timeline Line -->
+          <div class="timeline-line"></div>
+
+          <!-- Item 1 -->
+          <div class="timeline-item left reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <img src="image/mn.jpg" alt="Ministère Education Nationale" class="timeline-logo" />
+              <span class="timeline-date">2022</span>
+              <h4 class="timeline-title">Baccalauréat Sciences Physiques</h4>
+              <p class="timeline-desc">Obtention du Baccalauréat Sciences Physiques au Lycée Lissan Edin Ibn Khatib à
+                Salé.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item right reveal delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <img src="image/emsi.png" alt="EMSI" class="timeline-logo" />
+              <span class="timeline-date">2022 – Présent</span>
+              <h4 class="timeline-title">Cycle Ingénieur à l’EMSI — IA & Data Science</h4>
+              <p class="timeline-desc">Formation en Génie Informatique et Réseaux, avec une spécialisation en
+                Intelligence Artificielle & Data Science.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item left reveal delay-2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <img src="image/fm6.png" alt="Fondation Mohammed VI" class="timeline-logo timeline-logo-white" />
+              <span class="timeline-date">2025</span>
+              <h4 class="timeline-title">Stage PFA — Fondation Mohammed VI</h4>
+              <p class="timeline-desc">Développement d’une plateforme collaborative pour centraliser les demandes
+                administratives et faciliter la gestion des tâches internes.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item right reveal delay-3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <img src="image/mcma.jpg" alt="MAMDA-MCMA" class="timeline-logo" />
+              <span class="timeline-date">2026</span>
+              <h4 class="timeline-title">Stage PFA — MAMDA-MCMA</h4>
+              <p class="timeline-desc">Conception d’un système intelligent d’extraction automatique des informations des
+                CNIE marocaines par Computer Vision et OCR.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="timeline-item left reveal delay-4">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-logo timeline-logo-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.636 50.636 0 00-2.658-.813A59.906 59.906 0 0112 3.493a59.903 59.903 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                </svg>
+              </div>
+              <span class="timeline-date">2027</span>
+              <h4 class="timeline-title">Projet de Fin d’Études (PFE)</h4>
+              <p class="timeline-desc">Stage PFE de 6 mois en Intelligence Artificielle & Data Science à partir de
+                février 2027.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── EXPERIENCE SECTION ─── -->
+    <section class="experience-section has-glow" id="experience">
+      <div class="container">
+        <h3 class="section-title reveal">Expérience <span class="accent-italic">Professionnelle</span></h3>
+
+        <div class="exp-grid">
+          <div class="exp-card reveal delay-1">
+            <div class="exp-date">1 juillet 2026 – 12 août 2026</div>
+            <h4 class="exp-role">Stagiaire PFA — AI & data science</h4>
+            <div class="exp-company">MAMDA-MCMA, Rabat</div>
+            <p class="exp-desc">Conception et développement d’un système intelligent permettant d’automatiser
+              l’extraction des informations des CNIE marocaines, anciennes et nouvelles générations. La solution combine
+              Computer Vision, Deep Learning et OCR pour détecter, traiter et extraire les données des documents, avec
+              une API backend, une base de données et des interfaces web et mobile.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>TensorFlow/Keras</span><span>OpenCV</span><span>Tesseract</span><span>FastAPI</span><span>React.js</span><span>React
+                Native</span>
+            </div>
+            <div class="project-actions" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <button class="btn btn-lime" onclick="openModal('archModal')">Voir l'architecture</button>
+            </div>
+          </div>
+
+          <div class="exp-card reveal delay-2">
+            <div class="exp-date">15 juillet 2025 – 15 août 2025</div>
+            <h4 class="exp-role">Stagiaire PFA — Full Stack</h4>
+            <div class="exp-company">Fondation Mohammed VI, Rabat</div>
+            <p class="exp-desc">Conception et développement d’une plateforme web collaborative destinée à centraliser
+              les demandes administratives, faciliter le partage d’informations et améliorer la gestion des tâches
+              internes. La plateforme intègre notamment la gestion des utilisateurs, des rôles, des demandes et leur
+              suivi à travers une architecture Django basée sur le modèle MTV.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>Django
+                (MTV)</span><span>SQLite</span><span>HTML</span><span>CSS</span><span>bootstrap</span><span>JavaScript</span><span>Trello</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ─── PROJECTS SECTION ─── -->
+    <section class="projects-section has-glow" id="projects">
+      <div class="container">
+        <h3 class="section-title reveal text-center">Projets <span class="accent-italic">Académiques</span></h3>
+
+        <div class="projects-list">
+          <!-- Project 1 (Deepfakes) -->
+          <div class="project-card reveal delay-1">
+            <div class="project-content">
+              <h4 class="project-title">Détection de Deepfakes par Deep Learning</h4>
+
+              <div class="project-metrics">
+                <span class="metric-badge metric-purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                  AUC-ROC: 0.9988
+                </span>
+                <span class="metric-badge metric-cyan">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 7v10c0 2 1.5 3 4 3h8c2.5 0 4-1 4-3V7c0-2-1.5-3-4-3H8C5.5 4 4 5 4 7zM4 11h16M8 15h4" />
+                  </svg>
+                  Dataset: 140K images
+                </span>
+              </div>
+
+              <p class="project-desc">Système intelligent de classification permettant de distinguer les contenus
+                visuels authentiques des contenus manipulés. Le modèle exploite des architectures CNN et le Transfer
+                Learning pour identifier automatiquement les caractéristiques associées aux deepfakes.</p>
+              <div class="tech-tags">
+                <span>Python</span><span>TensorFlow/PyTorch</span><span>OpenCV</span><span>CNN</span><span>Transfer
+                  Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 (EMSI Knowledge Hub) -->
+          <div class="project-card reveal delay-1">
+            <div class="project-content">
+              <h4 class="project-title">EMSI Knowledge Hub</h4>
+
+              <div class="project-metrics">
+                <span class="metric-badge metric-purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                  3 rôles
+                </span>
+                <span class="metric-badge metric-green">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                  RAG sécurisé
+                </span>
+              </div>
+
+              <p class="project-desc">Plateforme intelligente permettant aux étudiants et professeurs d’interroger les
+                documents officiels de l’EMSI à travers un chatbot basé sur une architecture RAG. Le système combine
+                recherche vectorielle, LLM et gestion sécurisée des accès.</p>
+              <div class="tech-tags">
+                <span>FastAPI</span><span>React.js</span><span>MongoDB</span><span>ChromaDB</span><span>LangChain</span><span>Llama
+                  3</span><span>RAG</span><span>JWT/RBAC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 (Recommandation) -->
+          <div class="project-card reveal delay-1">
+            <div class="project-content">
+              <h4 class="project-title">Système de Recommandation Intelligent pour E-commerce</h4>
+
+              <div class="project-metrics">
+                <span class="metric-badge metric-cyan">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                  2.7M interactions
+                </span>
+                <span class="metric-badge metric-purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                  RMSE: 2.94
+                </span>
+              </div>
+
+              <p class="project-desc">Moteur de recommandation personnalisé conçu pour proposer des produits adaptés aux
+                préférences des utilisateurs à partir de leurs interactions. Le système exploite le filtrage
+                collaboratif et des techniques de Machine Learning.</p>
+              <div class="tech-tags">
+                <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Machine
+                  Learning</span><span>Collaborative Filtering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 (Bibliothèque) -->
+          <div class="project-card reveal delay-1">
+            <div class="project-content">
+              <h4 class="project-title">Système de Gestion de Bibliothèque — C++ & Java Swing</h4>
+              <p class="project-desc">Application de gestion de bibliothèque réalisée en deux versions, en C++ puis en
+                Java avec Swing, permettant de gérer les livres, les utilisateurs et les opérations d’emprunt. Le projet
+                met en pratique les concepts de la programmation orientée objet et leur implémentation dans deux
+                environnements différents.</p>
+              <div class="tech-tags">
+                <span>C++</span><span>Java</span><span>Java Swing</span><span>POO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 (Réservation) -->
+          <div class="project-card reveal delay-1">
+            <div class="project-content">
+              <h4 class="project-title">Système de Réservation — Django</h4>
+              <p class="project-desc">Application web permettant de gérer la réservation de salles et d’équipements,
+                avec authentification des utilisateurs et suivi des réservations. Le projet repose sur l’architecture
+                Django et une gestion structurée des données.</p>
+              <div class="tech-tags">
+                <span>Python</span><span>Django</span><span>Django</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 (MAMDA) -->
+          <div class="project-card reveal delay-1">
+            <div class="project-content">
+              <h4 class="project-title">Système OCR Intelligent — CNIE Marocaine</h4>
+              <p class="project-desc">Conception d'un pipeline complet (Computer Vision + OCR) pour l'extraction
+                automatique des données des cartes d'identité nationales marocaines.</p>
+              <div class="tech-tags">
+                <span>Python</span><span>TensorFlow/Keras</span><span>OpenCV</span><span>Tesseract</span><span>FastAPI</span><span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CERTIFICATIONS (Testimonial Style) ─── -->
+    <section class="cert-marquee-section has-glow" id="certifications">
+      <div class="container">
+        <h3 class="section-title reveal text-center">Mes <span class="accent-italic">Certifications</span></h3>
+      </div>
+
+      <div class="marquee-wrapper">
+        <div class="marquee-track" id="certMarquee">
+          <!-- Card 1 -->
+          <div class="cert-card">
+            <div class="cert-quote-icon">”</div>
+            <div class="cert-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="cert-text">The Unix Workbench</p>
+            <div class="cert-author">
+              <img src="photoamine.jpg" alt="Amine Halhoul" />
+              <div class="author-info">
+                <span class="author-name">The Johns Hopkins University / Coursera</span>
+                <span class="author-title">2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="cert-card">
+            <div class="cert-quote-icon">”</div>
+            <div class="cert-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="cert-text">Introduction à la programmation orientée objet (en C++)</p>
+            <div class="cert-author">
+              <img src="photoamine.jpg" alt="Amine Halhoul" />
+              <div class="author-info">
+                <span class="author-name">EPFL / Coursera</span>
+                <span class="author-title">2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="cert-card">
+            <div class="cert-quote-icon">”</div>
+            <div class="cert-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="cert-text">Interactivity with JavaScript</p>
+            <div class="cert-author">
+              <img src="photoamine.jpg" alt="Amine Halhoul" />
+              <div class="author-info">
+                <span class="author-name">University of Michigan - Stephen M. Ross School of Business / Coursera</span>
+                <span class="author-title">2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="cert-card">
+            <div class="cert-quote-icon">”</div>
+            <div class="cert-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="cert-text">react native</p>
+            <div class="cert-author">
+              <img src="photoamine.jpg" alt="Amine Halhoul" />
+              <div class="author-info">
+                <span class="author-name">Meta / Coursera</span>
+                <span class="author-title">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="cert-card">
+            <div class="cert-quote-icon">”</div>
+            <div class="cert-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="cert-text">Python for Data Science, AI & Development</p>
+            <div class="cert-author">
+              <img src="photoamine.jpg" alt="Amine Halhoul" />
+              <div class="author-info">
+                <span class="author-name">IBM / Coursera</span>
+                <span class="author-title">2025</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="cert-card">
+            <div class="cert-quote-icon">”</div>
+            <div class="cert-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="cert-text">La recherche documentaire</p>
+            <div class="cert-author">
+              <img src="photoamine.jpg" alt="Amine Halhoul" />
+              <div class="author-info">
+                <span class="author-name">École Polytechnique / Coursera</span>
+                <span class="author-title">2025</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="cert-card">
+            <div class="cert-quote-icon">”</div>
+            <div class="cert-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="cert-text">Software Engineering: Software Design and Project Management</p>
+            <div class="cert-author">
+              <img src="photoamine.jpg" alt="Amine Halhoul" />
+              <div class="author-info">
+                <span class="author-name">The Hong Kong University of Science and Technology / Coursera</span>
+                <span class="author-title">2025</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="cert-card">
+            <div class="cert-quote-icon">”</div>
+            <div class="cert-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="cert-text">Gestion de projet Agile</p>
+            <div class="cert-author">
+              <img src="photoamine.jpg" alt="Amine Halhoul" />
+              <div class="author-info">
+                <span class="author-name">Google / Coursera</span>
+                <span class="author-title">2026</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 9 -->
+          <div class="cert-card">
+            <div class="cert-quote-icon">”</div>
+            <div class="cert-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="cert-text">Introduction to Big Data</p>
+            <div class="cert-author">
+              <img src="photoamine.jpg" alt="Amine Halhoul" />
+              <div class="author-info">
+                <span class="author-name">San Diego Supercomputer Center / Coursera</span>
+                <span class="author-title">2026</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 10 -->
+          <div class="cert-card cert-card--gold">
+            <div class="cert-quote-icon">”</div>
+            <div class="cert-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="cert-text">Oracle Cloud Infrastructure AI Foundations Associate (2026)</p>
+            <div class="cert-author">
+              <img src="photoamine.jpg" alt="Amine Halhoul" />
+              <div class="author-info">
+                <span class="author-name">Oracle</span>
+                <span class="author-title">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicate Cards for Infinite Scroll Effect (cloned via JS or directly here) -->
+          <!-- We will let JS duplicate them for a perfect infinite loop, or do it here. Let's do it in JS for cleaner HTML. -->
+
+        </div>
+      </div>
+    </section>
+    <!-- ─── TECH STACK SECTION ─── -->
+    <section class="stack-section has-glow reveal" id="competences">
+      <div class="container">
+        <h3 class="section-title text-center">Compétences <span class="accent-italic">Techniques</span></h3>
+
+        <div class="stack-categories">
+
+          <!-- Category 1: IA & Data Science -->
+          <div class="stack-category reveal delay-1">
+            <h4>Intelligence Artificielle &amp; Data Science</h4>
+            <div class="stack-items">
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" class="skill-icon" />
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="stack-item">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="#bef264" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                </svg>
+                <span class="skill-name">Machine Learning</span>
+              </div>
+              <div class="stack-item">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="#bef264" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+                </svg>
+                <span class="skill-name">Deep Learning</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" class="skill-icon" />
+                <span class="skill-name">TensorFlow/Keras</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" class="skill-icon" />
+                <span class="skill-name">PyTorch</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="Scikit-learn" class="skill-icon" />
+                <span class="skill-name">Scikit-learn</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/opencv/5C3EE8" alt="OpenCV" class="skill-icon" />
+                <span class="skill-name">OpenCV</span>
+              </div>
+              <div class="stack-item">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="#bef264" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                </svg>
+                <span class="skill-name">Tesseract OCR</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/pandas/150458" alt="Pandas" class="skill-icon" />
+                <span class="skill-name">Pandas</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/numpy/013243" alt="NumPy" class="skill-icon" />
+                <span class="skill-name">NumPy</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/apachespark/E25A1C" alt="PySpark" class="skill-icon" />
+                <span class="skill-name">PySpark</span>
+              </div>
+              <div class="stack-item">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="#F2C811">
+                  <path
+                    d="M14.545 1.545h3.636v20.91H14.545V1.545zM9.091 7.42h3.636v15.034H9.091V7.421zM3.636 13.364h3.636v9.09H3.636v-9.09z" />
+                </svg>
+                <span class="skill-name">Power BI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & Développement -->
+          <div class="stack-category reveal delay-2">
+            <h4>Backend &amp; Développement</h4>
+            <div class="stack-items">
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" class="skill-icon" />
+                <span class="skill-name">FastAPI</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/django/092E20" alt="Django" class="skill-icon" />
+                <span class="skill-name">Django</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java"
+                  class="skill-icon" />
+                <span class="skill-name">Java</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                  alt="C++" class="skill-icon" />
+                <span class="skill-name">C++</span>
+              </div>
+              <div class="stack-item">
+                <svg class="skill-icon" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#00599c"
+                    d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Zm0 0" />
+                  <path fill="#004482"
+                    d="m68.36 126.586 46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Zm0 0" />
+                  <path fill="#659ad2"
+                    d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Zm0 0" />
+                  <!-- C letter without ++, translated slightly right to center it -->
+                  <path fill="#fff" transform="translate(10, 0)"
+                    d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465-10.433 0-18.922-8.488-18.922-18.922 0-10.434 8.49-18.922 18.922-18.922 6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91z" />
+                </svg>
+                <span class="skill-name">C</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#"
+                  class="skill-icon" />
+                <span class="skill-name">C#</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/dotnet/512BD4" alt=".NET" class="skill-icon" />
+                <span class="skill-name">.NET</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" class="skill-icon" />
+                <span class="skill-name">PHP</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" class="skill-icon" />
+                <span class="skill-name">Laravel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Frontend & Mobile -->
+          <div class="stack-category reveal delay-3">
+            <h4>Frontend &amp; Mobile</h4>
+            <div class="stack-items">
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React.js" class="skill-icon" />
+                <span class="skill-name">React.js</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React Native" class="skill-icon" />
+                <span class="skill-name">React Native</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap" class="skill-icon" />
+                <span class="skill-name">Bootstrap</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" class="skill-icon" />
+                <span class="skill-name">HTML</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS"
+                  class="skill-icon" />
+                <span class="skill-name">CSS</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" class="skill-icon" />
+                <span class="skill-name">JavaScript</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" class="skill-icon" />
+                <span class="skill-name">TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Bases de données -->
+          <div class="stack-category reveal delay-1">
+            <h4>Bases de données</h4>
+            <div class="stack-items">
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" class="skill-icon" />
+                <span class="skill-name">PostgreSQL</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" class="skill-icon" />
+                <span class="skill-name">MySQL</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" class="skill-icon" />
+                <span class="skill-name">MongoDB</span>
+              </div>
+              <div class="stack-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                  alt="SQL Server" class="skill-icon" />
+                <span class="skill-name">SQL Server</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: DevOps & Outils -->
+          <div class="stack-category reveal delay-2">
+            <h4>DevOps &amp; Outils</h4>
+            <div class="stack-items">
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" class="skill-icon" />
+                <span class="skill-name">Docker</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" class="skill-icon" />
+                <span class="skill-name">Git</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" class="skill-icon" />
+                <span class="skill-name">GitHub</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux" class="skill-icon" />
+                <span class="skill-name">Linux</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/n8n/FF6D5A" alt="n8n" class="skill-icon" />
+                <span class="skill-name">n8n</span>
+              </div>
+              <div class="stack-item">
+                <img src="https://cdn.simpleicons.org/trello/0052CC" alt="Trello" class="skill-icon" />
+                <span class="skill-name">Trello</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- ─── SOCIAL LINKS SECTION ─── -->
+    <section class="social-links-section has-glow reveal" id="social">
+      <div class="container text-center">
+        <h3 class="section-title">Social <span class="accent-italic">Links</span></h3>
+        <div class="social-icons-wrapper">
+          <a href="https://linkedin.com/in/mohamed-amine-halhoul-299261297" target="_blank" class="social-icon-link"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="https://github.com/aminehalhoul" target="_blank" class="social-icon-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+          <a href="mailto:aminehalhoul38@gmail.com" class="social-icon-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/1mine_nl?stkn=bW1kamRyYzF4YjVr&utm_source=qr" target="_blank"
+            class="social-icon-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://x.com/1mine_nl" target="_blank" class="social-icon-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/share/1Jj1FEK1wp/?mibextid=wwXIfr" target="_blank" class="social-icon-link"
+            aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+          <a href="https://open.spotify.com/user/31sio7ove3a67nyjftfelb6aku7e?si=854473dc1fdc480f" target="_blank"
+            class="social-icon-link" aria-label="Spotify">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+            </svg>
+          </a>
+          <a href="https://discord.com/users/1175827367348949084" target="_blank" class="social-icon-link"
+            aria-label="Discord">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT SECTION ─── -->
+    <section class="contact-section has-glow reveal" id="contact">
+      <div class="container text-center">
+        <h3 class="section-title">Contact <span class="accent-italic">Me</span></h3>
+        <p class="contact-headline">Construisons quelque chose d'intelligent ensemble</p>
+        
+        <div class="contact-info-grid">
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <h4>Email</h4>
+            <a href="mailto:aminehalhoul38@gmail.com" class="contact-link">aminehalhoul38@gmail.com</a>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <h4>Téléphone</h4>
+            <a href="tel:+212600000000" class="contact-link">+212 7 01 72 48 31</a>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <h4>Adresse</h4>
+            <p class="contact-text">Rabat, Maroc</p>
+          </div>
+        </div>
+        
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108863.0436784168!2d-6.8715506!3d34.0208834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d5b7d1f3f%3A0xb5d6a9d8c5a0b0b9!2sRabat%2C%20Morocco!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" 
+            width="100%" 
+            height="300" 
+            style="border:0; border-radius: 12px;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  <!-- Architecture Modal -->
+  <div class="modal" id="archModal" onclick="closeModal(event, 'archModal')" aria-hidden="true" role="dialog">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(null, 'archModal')" aria-label="Fermer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="modal-body">
+        <div class="modal-img-container">
+          <img src="image/projetmamda.png" alt="Architecture globale du système" class="modal-img">
+        </div>
+        <p class="modal-caption">Architecture globale du système intelligent d'extraction des CNIE</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pipeline Modal -->
+  <div class="modal" id="pipelineModal" onclick="closeModal(event, 'pipelineModal')" aria-hidden="true" role="dialog">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(null, 'pipelineModal')" aria-label="Fermer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="modal-body">
+        <h3 class="modal-title">Pipeline de Traitement</h3>
+        <div class="pipeline-flow">
+          <div class="pipeline-step">Acquisition CNIE</div>
+          <div class="pipeline-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg></div>
+          <div class="pipeline-step">Prétraitement OpenCV</div>
+          <div class="pipeline-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg></div>
+          <div class="pipeline-step">Classification Deep Learning</div>
+          <div class="pipeline-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg></div>
+          <div class="pipeline-step">Détection des zones d'intérêt</div>
+          <div class="pipeline-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg></div>
+          <div class="pipeline-step">Extraction OCR</div>
+          <div class="pipeline-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg></div>
+          <div class="pipeline-step">Structuration des données</div>
+          <div class="pipeline-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg></div>
+          <div class="pipeline-step">PostgreSQL</div>
+          <div class="pipeline-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg></div>
+          <div class="pipeline-step">API FastAPI</div>
+          <div class="pipeline-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg></div>
+          <div class="pipeline-step">React.js / React Native</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
