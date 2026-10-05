@@ -1,0 +1,48 @@
+﻿# =========================
+# SECRETS
+# =========================
+.env
+.env.*
+!.env.example
+
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+
+# =========================
+# PYTHON / FASTAPI
+# =========================
+__pycache__/
+*.py[cod]
+
+venv/
+.venv/
+
+backend/venv/
+backend/.venv/
+backend/__pycache__/
+
+
+# =========================
+# VS CODE / IDE
+# =========================
+.vscode/
+.idea/
+
+
+# =========================
+# WINDOWS / MAC
+# =========================
+Thumbs.db
+desktop.ini
+.DS_Store
+
+
+# =========================
+# LOGS / TEMP
+# =========================
+*.log
+*.tmp
+*.temp
+*.bak

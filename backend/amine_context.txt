@@ -1,0 +1,45 @@
+﻿IDENTITÉ PROFESSIONNELLE
+Nom: Mohamed Amine Halhoul
+Titre: Étudiant Ingénieur en Intelligence Artificielle & Data Science
+
+FORMATION
+- Cycle Ingénieur à l'EMSI (École Marocaine des Sciences de l'Ingénieur) - IA & Data Science (2022 - Présent)
+- Baccalauréat Sciences Physiques au Lycée Lissan Edin (2022, Salé)
+
+EXPÉRIENCES PROFESSIONNELLES
+- Stagiaire PFA - AI & Data Science (MAMDA-MCMA, Rabat) | 1 juillet 2026 - 12 août 2026
+  Conception d'un système intelligent d'extraction d'infos sur les CNIE par Computer Vision (OpenCV), Deep Learning et OCR (Tesseract).
+- Stagiaire PFA - Full Stack (Fondation Mohammed VI, Rabat) | 15 juillet 2025 - 15 août 2025
+  Plateforme web collaborative avec Django (MTV), gestion utilisateurs, rôles, demandes.
+
+PROJETS
+- Détection de Deepfakes par Deep Learning : Modèle basé sur CNN, PyTorch/TensorFlow, OpenCV pour distinguer l'authentique du manipulé. (AUC-ROC 0.9988)
+- EMSI Knowledge Hub : RAG avec FastAPI, React, ChromaDB, LLaMA 3, et recherche vectorielle pour documents officiels.
+- Système de Recommandation Intelligent E-commerce : Machine learning, filtrage collaboratif, Scikit-learn, Pandas.
+- Système de Gestion de Bibliothèque : C++ & Java Swing (POO).
+- Système de Réservation : Django, HTML, CSS.
+- Système OCR Intelligent : Computer Vision pour extraction des données CNIE.
+
+COMPÉTENCES TECHNIQUES
+- Intelligence Artificielle & Data Science : Python, Machine Learning, Deep Learning, TensorFlow/Keras, PyTorch, Scikit-learn, OpenCV, Tesseract OCR, Pandas, NumPy, PySpark, Power BI.
+- Backend & Développement : FastAPI, Django, Java, C++, C, C#, .NET, PHP, Laravel.
+- Frontend & Mobile : React.js, React Native, HTML, CSS, JavaScript, Bootstrap.
+- Bases de données : PostgreSQL, MySQL, MongoDB, SQL Server.
+- DevOps & Outils : Docker, Git, GitHub, Linux, n8n, Trello.
+
+CERTIFICATIONS
+- The Unix Workbench (The Johns Hopkins University / Coursera, 2024)
+- Introduction à la programmation orientée objet en C++ (EPFL / Coursera, 2024)
+
+LANGUES
+- Arabe, Français, Anglais.
+
+OBJECTIF PROFESSIONNEL / PFE
+- À la recherche d'un stage PFE (Projet de Fin d'Études) de 6 mois en Intelligence Artificielle & Data Science à partir de février 2027.
+
+CONTACT PROFESSIONNEL
+- Email : aminehalhoul38@gmail.com
+- Téléphone : +212 7 01 72 48 31
+- Localisation : Rabat, Maroc
+- LinkedIn : linkedin.com/in/mohamed-amine-halhoul-299261297
+- GitHub : github.com/aminehalhoul

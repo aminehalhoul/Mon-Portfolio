@@ -1,5 +1,5 @@
-/* ================================================================
-   MOHAMED AMINE HALHOUL — PORTFOLIO (anish7.me inspiration)
+﻿/* ================================================================
+   MOHAMED AMINE HALHOUL â€” PORTFOLIO (anish7.me inspiration)
    Animations & Interactions
 ================================================================ */
 
@@ -191,3 +191,170 @@ document.addEventListener('keydown', (e) => {
     });
   }
 });
+
+/* ================================================================
+   AMINE AI CHATBOT
+================================================================ */
+(function() {
+  const fab = document.getElementById('chatbotFab');
+  const panel = document.getElementById('chatbotPanel');
+  const closeBtn = document.getElementById('chatbotClose');
+  const form = document.getElementById('chatbotForm');
+  const input = document.getElementById('chatbotInput');
+  const messagesEl = document.getElementById('chatbotMessages');
+  const suggestionsEl = document.getElementById('chatbotSuggestions');
+  const sendBtn = document.getElementById('chatbotSend');
+
+  if (!fab || !panel) return;
+
+  let isOpen = false;
+  let chatHistory = [];
+
+  // Open / Close
+  function openChat() {
+    isOpen = true;
+    panel.classList.add('open');
+    panel.setAttribute('aria-hidden', 'false');
+    fab.classList.add('hidden');
+    setTimeout(() => input.focus(), 400);
+  }
+
+  function closeChat() {
+    isOpen = false;
+    panel.classList.remove('open');
+    panel.setAttribute('aria-hidden', 'true');
+    fab.classList.remove('hidden');
+  }
+
+  fab.addEventListener('click', openChat);
+  closeBtn.addEventListener('click', closeChat);
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) closeChat();
+  });
+
+  // Add a message to the chat
+  function addMessage(text, sender) {
+    const msg = document.createElement('div');
+    msg.classList.add('chat-msg', sender);
+
+    const avatarSvg = sender === 'ai'
+      ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>'
+      : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg>';
+
+    msg.innerHTML = `
+      <div class="chat-msg-avatar">${avatarSvg}</div>
+      <div class="chat-msg-bubble">${text}</div>
+    `;
+    messagesEl.appendChild(msg);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  // Typing indicator
+  function showTyping() {
+    const typing = document.createElement('div');
+    typing.classList.add('chat-msg', 'ai');
+    typing.id = 'typingIndicator';
+    typing.innerHTML = `
+      <div class="chat-msg-avatar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
+        </svg>
+      </div>
+      <div class="chat-msg-bubble">
+        <div class="typing-indicator"><span></span><span></span><span></span></div>
+      </div>
+    `;
+    messagesEl.appendChild(typing);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  function hideTyping() {
+    const typing = document.getElementById('typingIndicator');
+    if (typing) typing.remove();
+  }
+
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  //  API call â€“ Ready for backend integration
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  
+  
+  
+  const CHAT_API_ENDPOINT = 'http://127.0.0.1:8000/chat';
+
+  async function sendToAPI(question) {
+    showTyping();
+    sendBtn.disabled = true;
+
+    try {
+      // Préparer l'historique sans la question actuelle
+      const historyToSend = chatHistory.slice(0, -1);
+      
+      const res = await fetch(CHAT_API_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: question, history: historyToSend })
+      });
+
+      hideTyping();
+
+      if (res.status === 429) {
+        addMessage('Vous avez envoyé plusieurs messages rapidement. Veuillez patienter quelques instants.', 'ai');
+        return;
+      }
+      
+      if (!res.ok) throw new Error(HTTP );
+      const data = await res.json();
+      const aiResponse = data.answer || 'Désolé, je n\'ai pas pu traiter votre question.';
+      
+      addMessage(aiResponse, 'ai');
+      chatHistory.push({ role: 'ai', content: aiResponse });
+      
+      // Limiter l'historique côté client à 6 messages
+      if (chatHistory.length > 6) {
+        chatHistory = chatHistory.slice(-6);
+      }
+      
+    } catch (err) {
+      hideTyping();
+      addMessage('Amine AI est temporairement indisponible. Veuillez réessayer.', 'ai');
+      console.warn('Chatbot API error:', err);
+    } finally {
+      sendBtn.disabled = false;
+    }
+  }
+
+  // Handle form submit
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const text = input.value.trim();
+    if (!text) return;
+    
+    if (text.length > 500) {
+      addMessage('Votre message est trop long (maximum 500 caractères).', 'ai');
+      return;
+    }
+
+    addMessage(text, 'user');
+    chatHistory.push({ role: 'user', content: text });
+    input.value = '';
+
+    if (suggestionsEl) suggestionsEl.classList.add('hidden');
+
+    sendToAPI(text);
+  });
+
+  // Suggestion chips
+  document.querySelectorAll('.suggestion-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const q = chip.getAttribute('data-q');
+      addMessage(q, 'user');
+      chatHistory.push({ role: 'user', content: q });
+      suggestionsEl.classList.add('hidden');
+      sendToAPI(q);
+    });
+  });
+
+})();
+
