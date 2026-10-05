@@ -347,6 +347,8 @@ body {
     width: auto;
     max-width: none;
     padding: 6rem 2rem 3rem 2rem;
+    max-height: calc(100dvh - 2rem);
+    overflow-y: auto;
   }
 
   .nav-panel-link {
@@ -721,7 +723,7 @@ body {
 
 .exp-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
   gap: 2rem;
 }
 
@@ -1265,8 +1267,8 @@ body {
     top: 1rem;
   }
 
-  .hero-title {
-    font-size: clamp(3rem, 12vw, 4rem);
+  .hero-title-anish {
+    font-size: clamp(2.5rem, 10vw, 4rem);
   }
 
   .massive-text {
@@ -2105,6 +2107,8 @@ body {
   font-size: 0.85rem;
   line-height: 1.55;
   color: #e4e4e7;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .chat-msg.ai .chat-msg-bubble {
@@ -2255,18 +2259,22 @@ body {
   }
 
   .chatbot-panel {
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    max-height: 100%;
-    height: 100vh;
-    height: 100dvh;
-    border-radius: 0;
-    border: none;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    width: auto;
+    max-height: calc(100dvh - 2rem);
+    height: 650px;
+    border-radius: 20px;
+    border: 1px solid rgba(190, 242, 100, 0.15);
   }
 
   .chatbot-panel.open {
-    border-radius: 0;
+    border-radius: 20px;
+  }
+  
+  .chatbot-input input {
+    font-size: 16px !important;
   }
 
   .suggestion-chip {
