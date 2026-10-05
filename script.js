@@ -358,3 +358,23 @@ document.addEventListener('keydown', (e) => {
 
 })();
 
+
+
+/* ==========================================
+   HERO PHOTO INTERACTION
+========================================== */
+const heroPolygon = document.getElementById('heroPolygon');
+if (heroPolygon) {
+  let isAnimating = false;
+  heroPolygon.addEventListener('click', () => {
+    if (isAnimating) return; // Empêcher les clics répétés
+    
+    isAnimating = true;
+    heroPolygon.classList.toggle('show-photo-2');
+    
+    // Débloquer après la durée de l'animation (850ms)
+    setTimeout(() => {
+      isAnimating = false;
+    }, 850);
+  });
+}
