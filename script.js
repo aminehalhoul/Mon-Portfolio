@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 1. Custom Cursor
   const cursor = document.getElementById('cursor');
-  
+
   // Follow mouse
   document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 3. Scroll Reveal Animations
   const revealElements = document.querySelectorAll('.reveal');
-  
+
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 4. Advanced Text Reveal (Word by Word)
   const textReveals = document.querySelectorAll('.reveal-text');
-  
+
   const textObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const marqueeTrack = document.getElementById('certMarquee');
   if (marqueeTrack) {
     const cards = Array.from(marqueeTrack.children);
-    
+
     // Duplicate cards for infinite loop to look seamless
     cards.forEach(card => {
       const clone = card.cloneNode(true);
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let minDistance = Infinity;
 
       const allCards = document.querySelectorAll('.cert-card');
-      
+
       allCards.forEach(card => {
         const rect = card.getBoundingClientRect();
         // Calculate center of the card
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (closestCard) {
         closestCard.classList.add('active');
       }
-      
+
       requestAnimationFrame(updateActiveCard);
     };
 
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ================================================================
    MODAL LOGIC
 ================================================================ */
-window.openModal = function(id) {
+window.openModal = function (id) {
   const modal = document.getElementById(id);
   if (modal) {
     modal.classList.add('active');
@@ -168,7 +168,7 @@ window.openModal = function(id) {
   }
 };
 
-window.closeModal = function(event, id) {
+window.closeModal = function (event, id) {
   if (event && event.type === 'click') {
     // If clicking inside the content box, don't close (unless it's the close button itself)
     if (event.target.closest('.modal-content') && !event.target.closest('.modal-close')) {
@@ -195,7 +195,7 @@ document.addEventListener('keydown', (e) => {
 /* ================================================================
    AMINE AI CHATBOT
 ================================================================ */
-(function() {
+(function () {
   const fab = document.getElementById('chatbotFab');
   const panel = document.getElementById('chatbotPanel');
   const closeBtn = document.getElementById('chatbotClose');
@@ -278,10 +278,10 @@ document.addEventListener('keydown', (e) => {
   // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   //  API call â€“ Ready for backend integration
   // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  
-  
-  
-  const CHAT_API_ENDPOINT = 'http://127.0.0.1:8000/chat';
+
+
+
+  const CHAT_API_ENDPOINT = 'https://amine-portfolio-kohl-five.vercel.app/chat';
 
   async function sendToAPI(question) {
     showTyping();
@@ -290,7 +290,7 @@ document.addEventListener('keydown', (e) => {
     try {
       // Préparer l'historique sans la question actuelle
       const historyToSend = chatHistory.slice(0, -1);
-      
+
       const res = await fetch(CHAT_API_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -303,19 +303,19 @@ document.addEventListener('keydown', (e) => {
         addMessage('Vous avez envoyé plusieurs messages rapidement. Veuillez patienter quelques instants.', 'ai');
         return;
       }
-      
-      if (!res.ok) throw new Error(HTTP );
+
+      if (!res.ok) throw new Error(HTTP);
       const data = await res.json();
       const aiResponse = data.answer || 'Désolé, je n\'ai pas pu traiter votre question.';
-      
+
       addMessage(aiResponse, 'ai');
       chatHistory.push({ role: 'ai', content: aiResponse });
-      
+
       // Limiter l'historique côté client à 6 messages
       if (chatHistory.length > 6) {
         chatHistory = chatHistory.slice(-6);
       }
-      
+
     } catch (err) {
       hideTyping();
       addMessage('Amine AI est temporairement indisponible. Veuillez réessayer.', 'ai');
@@ -330,7 +330,7 @@ document.addEventListener('keydown', (e) => {
     e.preventDefault();
     const text = input.value.trim();
     if (!text) return;
-    
+
     if (text.length > 500) {
       addMessage('Votre message est trop long (maximum 500 caractères).', 'ai');
       return;
@@ -368,10 +368,10 @@ if (heroPolygon) {
   let isAnimating = false;
   heroPolygon.addEventListener('click', () => {
     if (isAnimating) return; // Empêcher les clics répétés
-    
+
     isAnimating = true;
     heroPolygon.classList.toggle('show-photo-2');
-    
+
     // Débloquer après la durée de l'animation (850ms)
     setTimeout(() => {
       isAnimating = false;
